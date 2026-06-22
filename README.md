@@ -138,7 +138,7 @@ python "Proyecto Enrique Siracusa y Miguel Requena.py"
 *   **Mecanismo de Hasheo**: Cuando el cliente ingresa un número de tarjeta (ej: `"1234567890"`), el sistema calcula su identificador aplicando la función `hash()` nativa de Python sobre la cadena. Para evitar discrepancias de signo y asegurar compatibilidad de 64 bits multiplataforma, se aplica la máscara de bits `& 0xffffffffffffffff` para forzar un entero sin signo.
 *   **¿Por qué es obligatorio usar Python 3.14.6?**:
     1. **Semilla de Hash Determinista**: Python por defecto aleatoriza la semilla de hash en cada arranque por seguridad. El script principal fuerza `PYTHONHASHSEED=0` para mantener la consistencia en el cálculo.
-    2. **Variabilidad entre Versiones**: El algoritmo interno de hash para strings en Python (SipHash y su implementación) cambia entre versiones mayores y menores del intérprete. Los identificadores cargados en [clientes.json] (como 971972920886152672` para `"1234567890"`) fueron generados y validados específicamente bajo **Python 3.14.6**.
+    2. **Variabilidad entre Versiones**: El algoritmo interno de hash para strings en Python (SipHash y su implementación) cambia entre versiones mayores y menores del intérprete. Los identificadores cargados en [clientes.json](file:///c:/Users/Enrique/Desktop/Proyecto_Algoritmos/clientes.json) (como `971972920886152672` para `"1234567890"`) fueron generados y validados específicamente bajo **Python 3.14.6**.
     3. **Impacto**: Si se ejecuta el proyecto en cualquier otra versión de Python (ej: 3.10 o 3.12), la función `hash("1234567890") & 0xffffffffffffffff` resultará en un valor completamente distinto, lo que impedirá que las tarjetas coincidan con la base de datos de clientes, rechazando todas las compras.
 
 ---
