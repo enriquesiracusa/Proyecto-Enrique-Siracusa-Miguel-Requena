@@ -23,21 +23,19 @@ Proyecto_Algoritmos/
 │
 ├── src/
 │   ├── controllers/
-│   │   ├── __init__.py
+│   │   ├── administrador.py        # Sub-sistema del operador y administrador de la máquina
 │   │   ├── maquina_expendedora.py  # Controlador maestro del ciclo de vida y eventos
 │   │   └── venta.py               # Orquestación transaccional de cada compra
 │   │
 │   ├── models/
-│   │   ├── __init__.py
 │   │   ├── producto.py            # Atributos y lógica de stock del producto
-│   │   └── tarjeta.py             # Registro de saldo y hash criptográfico
+│   │   └── tarjeta.py             # Registro de saldo y hash
 │   │
 │   ├── utils/
-│   │   ├── __init__.py
-│   │   └── gestor_archivos.py     # Manejo I/O de archivos JSON y reporte de texto
+│   │   ├── gestor_archivos.py     # Manejo I/O de archivos JSON y reporte de texto
+│   │   └── lector_entradas.py     # Funciones auxiliares para validar entradas por consola
 │   │
 │   └── views/
-│       ├── __init__.py
 │       └── catalogo.py            # Representación visual y búsquedas en matriz
 │
 ├── clientes.json                  # Base de datos inicial de tarjetas de prepago
