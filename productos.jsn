@@ -1,0 +1,308 @@
+[
+  {
+    "cod": "CocaC",
+    "prod": "Coca-Cola Classic 355 ml",
+    "precio": 1.1,
+    "despedida": "¡Disfruta de tu Coca-Cola bien fría!"
+  },
+  {
+    "cod": "CocaZ",
+    "prod": "Coca-Cola Zero 355 ml",
+    "precio": 1.2,
+    "despedida": "¡Más sabor, menos azucar!"
+  },
+  {
+    "cod": "CocaL",
+    "prod": "Coca-Cola Light 355 ml",
+    "precio": 1.2,
+    "despedida": "¡Este es tu sabor, disfrútalo!"
+  },
+  {
+    "cod": "Fanta",
+    "prod": "Fanta Naranja 355 ml",
+    "precio": 1.2,
+    "despedida": "¡Fanta Naranja es un Hit!"
+  },
+  {
+    "cod": "Chint",
+    "prod": "Chinotto 355 ml",
+    "precio": 1.1,
+    "despedida": "¡Disfruta la bebida cítrica número uno en el mundo!"
+  },
+  {
+    "cod": "Aguak",
+    "prod": "Aguakina Schweppes 355 ml",
+    "precio": 1,
+    "despedida": "Tómate tu tiempo con Schweppes"
+  },
+  {
+    "cod": "PowrA",
+    "prod": "Powerade 500 ml",
+    "precio": 1.5,
+    "despedida": "¡La pausa es poder con Powerade!"
+  },
+  {
+    "cod": "Nevada",
+    "prod": "Nevada 500 ml",
+    "precio": 0.7,
+    "despedida": "¡Nevada es el agua mineral!"
+  },
+  {
+    "cod": "Pepsi",
+    "prod": "Pepsi lata 355 ml",
+    "precio": 1.1,
+    "despedida": "Pepsi: ¡Es lo que te gusta!"
+  },
+  {
+    "cod": "PepsL",
+    "prod": "Pepsi light 355 ml",
+    "precio": 1.1,
+    "despedida": "Pepsi Light: disfruta sin calorías"
+  },
+  {
+    "cod": "PepsiZ",
+    "prod": "Pepsi Cero Azucar",
+    "precio": 1.1,
+    "despedida": "¡Cero Azucar: cero calorías!"
+  },
+  {
+    "cod": "Goldn",
+    "prod": "Golden naranja lata 355 ml",
+    "precio": 1.1,
+    "despedida": "Golden: ¡El sabor de tu diversión!"
+  },
+  {
+    "cod": "SvnUp",
+    "prod": "SevenUp 355 ml",
+    "precio": 1.2,
+    "despedida": "7UP: mereces lo mejor"
+  },
+  {
+    "cod": "Malta",
+    "prod": "Maltín Polar lata",
+    "precio": 1,
+    "despedida": "¡Maltín Polar: Energía natural!"
+  },
+  {
+    "cod": "Gator",
+    "prod": "Gatorade 500 ml",
+    "precio": 1.5,
+    "despedida": "Gatorade: ¡nada funciona mejor!"
+  },
+  {
+    "cod": "Minalba",
+    "prod": "Minalba 500 ml",
+    "precio": 0.65,
+    "despedida": "Minalba: Agua pura de manantial"
+  },
+  {
+    "cod": "Ruffl",
+    "prod": "Ruffles Deli Size",
+    "precio": 2,
+    "despedida": "Disfruta tus Ruffles onduladas"
+  },
+  {
+    "cod": "Dorit",
+    "prod": "Doritos Deli Size",
+    "precio": 2.25,
+    "despedida": "Doritos para los atrevidos"
+  },
+  {
+    "cod": "Cheet",
+    "prod": "Cheetos Deli Size",
+    "precio": 1.75,
+    "despedida": "Es cosa de Cheetos"
+  },
+  {
+    "cod": "Lays",
+    "prod": "Lays Deli Size",
+    "precio": 1.5,
+    "despedida": "A que no puedes comer solo una"
+  },
+  {
+    "cod": "Munch",
+    "prod": "Munchies",
+    "precio": 0.75,
+    "despedida": "¡Qué munchy este momento!"
+  },
+  {
+    "cod": "Platn",
+    "prod": "Platanitos Caribas",
+    "precio": 0.75,
+    "despedida": "Disfruta Platanitos Caribas por sus sabor!"
+  },
+  {
+    "cod": "Yuqts",
+    "prod": "Yuquitas Caribas",
+    "precio": 0.75,
+    "despedida": "Disfruta Yuquitas Caribas por su sabor!"
+  },
+  {
+    "cod": "NatuC",
+    "prod": "NatuChips originales",
+    "precio": 0.85,
+    "despedida": "Disfruta el verdadero plátano original"
+  },
+  {
+    "cod": "NatuL",
+    "prod": "NatuChips con limón",
+    "precio": 0.85,
+    "despedida": "Disfruta el verdadero sabor a limón"
+  },
+  {
+    "cod": "Savoy",
+    "prod": "Chocolate Savoy 100 g",
+    "precio": 0.6,
+    "despedida": "¡Savoy con sabor venezolano!"
+  },
+  {
+    "cod": "Savo2",
+    "prod": "Chocolate Savoy 130 g",
+    "precio": 0.85,
+    "despedida": "¡Savoy con sabor venezolano!"
+  },
+  {
+    "cod": "Savo3",
+    "prod": "Chocolate Savoy 150 g",
+    "precio": 1,
+    "despedida": "¡Savoy con sabor venezolano!"
+  },
+  {
+    "cod": "Savo4",
+    "prod": "Chocolate Savoy 175 g",
+    "precio": 1.25,
+    "despedida": "¡Savoy con sabor venezolano!"
+  },
+  {
+    "cod": "Savo5",
+    "prod": "Savoy Carré",
+    "precio": 1.5,
+    "despedida": "¡Savoy con sabor venezolano!"
+  },
+  {
+    "cod": "Hrshy",
+    "prod": "Barra Hershey's 43 g",
+    "precio": 0.5,
+    "despedida": "Hershey's: El sabor de los buenos recuerdos"
+  },
+  {
+    "cod": "Hrsh2",
+    "prod": "Barra Hershey's 74 g",
+    "precio": 1,
+    "despedida": "Hershey's: El sabor de los buenos recuerdos"
+  },
+  {
+    "cod": "Hrsh3",
+    "prod": "Barra Hershey's 124 g",
+    "precio": 1.5,
+    "despedida": "Hershey's: El sabor de los buenos recuerdos"
+  },
+  {
+    "cod": "KitKt",
+    "prod": "Barra KitKat",
+    "precio": 1.75,
+    "despedida": "¡Date un break, date un KitKat!"
+  },
+  {
+    "cod": "Reese",
+    "prod": "Reese's Peanut Butter Cups",
+    "precio": 2.25,
+    "despedida": "¡Todo por un Reese's!"
+  },
+  {
+    "cod": "CnchF",
+    "prod": "Cronch Flakes lonchera",
+    "precio": 1.6,
+    "despedida": "Cronch Flakes es enriquecido con 8 vitaminas y hierro"
+  },
+  {
+    "cod": "Azucr",
+    "prod": "Hojuelas Azucaradas lonchera",
+    "precio": 1.75,
+    "despedida": "Crocantes y deliciosas hojuelas de maíz azucaradas"
+  },
+  {
+    "cod": "ChocS",
+    "prod": "Choco Safari lonchera",
+    "precio": 1.75,
+    "despedida": "Formas divertidas de animales"
+  },
+  {
+    "cod": "ChocC",
+    "prod": "Choco Cronch lonchera",
+    "precio": 1.75,
+    "despedida": "Cereal expandido con sabor a chocolate"
+  },
+  {
+    "cod": "Abcts",
+    "prod": "Abcitoos Lonchera",
+    "precio": 1.7,
+    "despedida": "Crocante y delicioso con divertidas formas de letras"
+  },
+  {
+    "cod": "PopCr",
+    "prod": "Pop Cronch Lonchera",
+    "precio": 1.85,
+    "despedida": "Crocante y dulce en forma de divertidas esferas"
+  },
+  {
+    "cod": "PopCC",
+    "prod": "Pop Cronch chocolate",
+    "precio": 1.9,
+    "despedida": "Sabor a chocolate en forma de divertidas esferas"
+  },
+  {
+    "cod": "Fruty",
+    "prod": "Fruty Aros Lonchera",
+    "precio": 1.8,
+    "despedida": "Forma de divertidos aros de colores con sabor a frutas"
+  },
+  {
+    "cod": "CornF",
+    "prod": "Corn Flakes de Kelloggs",
+    "precio": 1.75,
+    "despedida": "Tu cereal de Confianza"
+  },
+  {
+    "cod": "Zucar",
+    "prod": "Zucaritas Fun Size",
+    "precio": 1.85,
+    "despedida": "¡Rrrrrrrriquísimas!"
+  },
+  {
+    "cod": "ChocZ",
+    "prod": "ChocoZucarits Fun Fize",
+    "precio": 1.99,
+    "despedida": "¡Energía para ganar!"
+  },
+  {
+    "cod": "Froot",
+    "prod": "Froot Loops Fun Size",
+    "precio": 1.99,
+    "despedida": "¡Son Frutidiveridos!"
+  },
+  {
+    "cod": "CornP",
+    "prod": "Corn Pops Fun Size",
+    "precio": 1.95,
+    "despedida": "¡Necesito mis bolitas Corn Pops!"
+  },
+  {
+    "cod": "PopTF",
+    "prod": "Pop Tarts Fresa (2 unidades)",
+    "precio": 1.75,
+    "despedida": "Delicia pegajosita para llevar"
+  },
+  {
+    "cod": "PopTC",
+    "prod": "Pop Tarts Canela (2 unidades)",
+    "precio": 1.75,
+    "despedida": "Delicia pegajosita para llevar"
+  },
+  {
+    "cod": "PopTA",
+    "prod": "Pop Tarts Arándano (2 unidades)",
+    "precio": 1.75,
+    "despedida": "Delicia pegajosita para llevar"
+  }
+]
