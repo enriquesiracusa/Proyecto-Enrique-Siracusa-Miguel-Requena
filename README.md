@@ -4,13 +4,6 @@ Este proyecto implementa un simulador de **Máquina Expendedora Corporativa** ro
 
 ---
 
-## Autores
-
-*  **Enrique Siracusa**
-*  **Miguel Requena**
-
----
-
 ## Características Principales
 
 *   **Arquitectura Modular POO**: Estructurado con clases bien definidas (`Producto`, `Tarjeta`, `Venta`, `Catalogo`, `MaquinaExpendedora` y `GestorArchivos`) que interactúan mediante encapsulamiento estricto.
@@ -96,6 +89,9 @@ classDiagram
         +mostrar_matriz()
         +buscar_por_coordenada(coord) Producto
         +buscar_por_codigo(cod) Producto
+        +agregar_producto(p)
+        +columnas_usadas() List~str~
+        +filas_usadas() List~int~
     }
 
     class GestorArchivos {
@@ -106,7 +102,17 @@ classDiagram
         +cargar_clientes_json() List
         +cargar_estado() Dict
         +guardar_estado(catalogo, tarjetas)
-        +escribir_reporte(datos)
+        +existe_estado() bool
+        +escribir_reporte(datos, gastos)
+    }
+
+    class ControladorAdministrador {
+        +catalogo : Catalogo
+        +tarjetas : List~Tarjeta~
+        +gestor : GestorArchivos
+        +iniciar_restock()
+        -_menu_cambiar_producto()
+        -_menu_reabastecer_o_agregar()
     }
 
     class MaquinaExpendedora {
@@ -114,17 +120,28 @@ classDiagram
         +tarjetas : List~Tarjeta~
         +gestor : GestorArchivos
         +ventas : List~Venta~
+        +_encendida : bool
+        +ultimo_mensaje : str
         +iniciar()
+        +mostrar_prompt()
+        +procesar_entrada(entrada)
         +iniciar_venta_por_coordenada(coordenada)
         +iniciar_restock()
         +generar_reporte()
+        +encender()
     }
 
     MaquinaExpendedora --> Catalogo
     MaquinaExpendedora --> GestorArchivos
     MaquinaExpendedora --> Tarjeta
     MaquinaExpendedora --> Venta
+    MaquinaExpendedora --> ControladorAdministrador
+    ControladorAdministrador --> Catalogo
+    ControladorAdministrador --> GestorArchivos
+    ControladorAdministrador --> Tarjeta
     Catalogo --> Producto
+    Venta --> Producto
+    Venta --> Tarjeta
 ```
 
 ---
@@ -145,7 +162,7 @@ python "Proyecto Enrique Siracusa y Miguel Requena.py"
 *   **Mecanismo de Hasheo**: Cuando el cliente ingresa un número de tarjeta (ej: `"1234567890"`), el sistema calcula su identificador aplicando la función `hash()` nativa de Python sobre la cadena. Para evitar discrepancias de signo y asegurar compatibilidad de 64 bits multiplataforma, se aplica la máscara de bits `& 0xffffffffffffffff` para forzar un entero sin signo.
 *   **¿Por qué es obligatorio usar Python 3.14.6?**:
     1. **Semilla de Hash Determinista**: Python por defecto aleatoriza la semilla de hash en cada arranque por seguridad. El script principal fuerza `PYTHONHASHSEED=0` para mantener la consistencia en el cálculo.
-    2. **Variabilidad entre Versiones**: El algoritmo interno de hash para strings en Python (SipHash y su implementación) cambia entre versiones mayores y menores del intérprete. Los identificadores cargados en [clientes.json](file:///c:/Users/Enrique/Desktop/Proyecto_Algoritmos/clientes.json) (como `971972920886152672` para `"1234567890"`) fueron generados y validados específicamente bajo **Python 3.14.6**.
+    2. **Variabilidad entre Versiones**: El algoritmo interno de hash para strings en Python (SipHash y su implementación) cambia entre versiones mayores y menores del intérprete. Los identificadores cargados en [clientes.json](clientes.json) (como `971972920886152672` para `"1234567890"`) fueron generados y validados específicamente bajo **Python 3.14.6**.
     3. **Impacto**: Si se ejecuta el proyecto en cualquier otra versión de Python (ej: 3.10 o 3.12), la función `hash("1234567890") & 0xffffffffffffffff` resultará en un valor completamente distinto, lo que impedirá que las tarjetas coincidan con la base de datos de clientes, rechazando todas las compras.
 
 ---
