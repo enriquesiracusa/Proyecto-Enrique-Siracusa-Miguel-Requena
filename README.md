@@ -9,6 +9,8 @@ Este proyecto implementa un simulador de **Máquina Expendedora Corporativa** ro
 *  **Enrique Siracusa**
 *  **Miguel Requena**
 
+---
+
 ## Características Principales
 
 *   **Arquitectura Modular POO**: Estructurado con clases bien definidas (`Producto`, `Tarjeta`, `Venta`, `Catalogo`, `MaquinaExpendedora` y `GestorArchivos`) que interactúan mediante encapsulamiento estricto.
